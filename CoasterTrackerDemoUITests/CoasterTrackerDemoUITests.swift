@@ -1,13 +1,13 @@
 //
-//  CoasterTrackerDemo1UITests.swift
-//  CoasterTrackerDemo1UITests
+//  CoasterTrackerDemoUITests.swift
+//  CoasterTrackerDemoUITests
 //
 //  Created by Jonathan Lepolt on 4/21/22.
 //
 
 import XCTest
 
-class CoasterTrackerDemo1UITests: XCTestCase {
+class CoasterTrackerDemoUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

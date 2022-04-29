@@ -1,13 +1,13 @@
 //
-//  CoasterTrackerDemo1UITestsLaunchTests.swift
-//  CoasterTrackerDemo1UITests
+//  CoasterTrackerDemoUITestsLaunchTests.swift
+//  CoasterTrackerDemoUITests
 //
 //  Created by Jonathan Lepolt on 4/21/22.
 //
 
 import XCTest
 
-class CoasterTrackerDemo1UITestsLaunchTests: XCTestCase {
+class CoasterTrackerDemoUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
