@@ -50,9 +50,8 @@ struct RollerCoasterListView: View {
                     }
                 }
                 .padding()
+            }
         }
-        }
-
     }
 }
 
