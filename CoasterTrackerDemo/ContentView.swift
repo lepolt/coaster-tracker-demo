@@ -30,15 +30,6 @@ struct ContentView: View {
                             Image(systemName: "2.square.fill")
                         }
                     }
-
-                CoastersByThemeParkView()
-                    .tabItem {
-                        Label {
-                            Text("Grouped")
-                        } icon: {
-                            Image(systemName: "3.square.fill")
-                        }
-                    }
             }
         }
     }
