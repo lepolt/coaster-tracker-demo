@@ -43,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB14CF48285B575300DE7F1C /* CoasterTrackerDemo v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoasterTrackerDemo v2.xcdatamodel"; sourceTree = "<group>"; };
+		AB14CF49285B575A00DE7F1C /* CoasterTrackerDemo v3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoasterTrackerDemo v3.xcdatamodel"; sourceTree = "<group>"; };
 		AB2616E528119F6C0070A189 /* CoasterTrackerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoasterTrackerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2616E828119F6C0070A189 /* CoasterTrackerDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoasterTrackerDemoApp.swift; sourceTree = "<group>"; };
 		AB2616EA28119F6C0070A189 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -640,9 +642,11 @@
 		AB2616F328119F6E0070A189 /* CoasterTrackerDemo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				AB14CF49285B575A00DE7F1C /* CoasterTrackerDemo v3.xcdatamodel */,
+				AB14CF48285B575300DE7F1C /* CoasterTrackerDemo v2.xcdatamodel */,
 				AB2616F428119F6E0070A189 /* CoasterTrackerDemo1.xcdatamodel */,
 			);
-			currentVersion = AB2616F428119F6E0070A189 /* CoasterTrackerDemo1.xcdatamodel */;
+			currentVersion = AB14CF49285B575A00DE7F1C /* CoasterTrackerDemo v3.xcdatamodel */;
 			path = CoasterTrackerDemo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
