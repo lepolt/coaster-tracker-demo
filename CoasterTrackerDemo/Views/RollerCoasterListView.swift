@@ -30,9 +30,6 @@ struct RollerCoasterListView: View {
                             Text(rollerCoaster.name!)
                         }
                     }
-                    .onDelete { indexSet in
-                        viewModel.delete(index: indexSet.first)
-                    }
                 }
                 Spacer()
             }
