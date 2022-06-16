@@ -20,9 +20,6 @@
 		AB26171C2811A15F0070A189 /* RollerCoasterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB26171B2811A15F0070A189 /* RollerCoasterListViewModel.swift */; };
 		AB26171E2811A5AC0070A189 /* RollerCoasterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB26171D2811A5AC0070A189 /* RollerCoasterDetailsView.swift */; };
 		AB2617202811A6030070A189 /* RollerCoasterDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB26171F2811A6030070A189 /* RollerCoasterDetailsViewModel.swift */; };
-		AB2617222811ABF40070A189 /* ThemeParkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2617212811ABF40070A189 /* ThemeParkListView.swift */; };
-		AB2617242811C27D0070A189 /* CoastersByThemeParkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2617232811C27D0070A189 /* CoastersByThemeParkView.swift */; };
-		AB2617262811C2850070A189 /* CoastersByThemeParkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2617252811C2850070A189 /* CoastersByThemeParkViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB14CF40285B4E1A00DE7F1C /* CoasterTrackerDemo v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoasterTrackerDemo v2.xcdatamodel"; sourceTree = "<group>"; };
 		AB2616E528119F6C0070A189 /* CoasterTrackerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoasterTrackerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2616E828119F6C0070A189 /* CoasterTrackerDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoasterTrackerDemoApp.swift; sourceTree = "<group>"; };
 		AB2616EA28119F6C0070A189 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,9 +57,6 @@
 		AB26171B2811A15F0070A189 /* RollerCoasterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollerCoasterListViewModel.swift; sourceTree = "<group>"; };
 		AB26171D2811A5AC0070A189 /* RollerCoasterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollerCoasterDetailsView.swift; sourceTree = "<group>"; };
 		AB26171F2811A6030070A189 /* RollerCoasterDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollerCoasterDetailsViewModel.swift; sourceTree = "<group>"; };
-		AB2617212811ABF40070A189 /* ThemeParkListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeParkListView.swift; sourceTree = "<group>"; };
-		AB2617232811C27D0070A189 /* CoastersByThemeParkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoastersByThemeParkView.swift; sourceTree = "<group>"; };
-		AB2617252811C2850070A189 /* CoastersByThemeParkViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoastersByThemeParkViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,8 +147,6 @@
 		AB2617172811A0500070A189 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AB2617232811C27D0070A189 /* CoastersByThemeParkView.swift */,
-				AB2617212811ABF40070A189 /* ThemeParkListView.swift */,
 				AB2617182811A0C30070A189 /* RollerCoasterListView.swift */,
 				AB26171D2811A5AC0070A189 /* RollerCoasterDetailsView.swift */,
 			);
@@ -163,7 +156,6 @@
 		AB26171A2811A14F0070A189 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				AB2617252811C2850070A189 /* CoastersByThemeParkViewModel.swift */,
 				AB26171B2811A15F0070A189 /* RollerCoasterListViewModel.swift */,
 				AB26171F2811A6030070A189 /* RollerCoasterDetailsViewModel.swift */,
 			);
@@ -301,13 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB2616F228119F6E0070A189 /* Persistence.swift in Sources */,
-				AB2617242811C27D0070A189 /* CoastersByThemeParkView.swift in Sources */,
-				AB2617222811ABF40070A189 /* ThemeParkListView.swift in Sources */,
 				AB2617202811A6030070A189 /* RollerCoasterDetailsViewModel.swift in Sources */,
 				AB26171E2811A5AC0070A189 /* RollerCoasterDetailsView.swift in Sources */,
 				AB2616EB28119F6C0070A189 /* ContentView.swift in Sources */,
 				AB2616F528119F6E0070A189 /* CoasterTrackerDemo.xcdatamodeld in Sources */,
-				AB2617262811C2850070A189 /* CoastersByThemeParkViewModel.swift in Sources */,
 				AB2616E928119F6C0070A189 /* CoasterTrackerDemoApp.swift in Sources */,
 				AB26171C2811A15F0070A189 /* RollerCoasterListViewModel.swift in Sources */,
 				AB2617192811A0C30070A189 /* RollerCoasterListView.swift in Sources */,
@@ -640,9 +629,10 @@
 		AB2616F328119F6E0070A189 /* CoasterTrackerDemo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				AB14CF40285B4E1A00DE7F1C /* CoasterTrackerDemo v2.xcdatamodel */,
 				AB2616F428119F6E0070A189 /* CoasterTrackerDemo1.xcdatamodel */,
 			);
-			currentVersion = AB2616F428119F6E0070A189 /* CoasterTrackerDemo1.xcdatamodel */;
+			currentVersion = AB14CF40285B4E1A00DE7F1C /* CoasterTrackerDemo v2.xcdatamodel */;
 			path = CoasterTrackerDemo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

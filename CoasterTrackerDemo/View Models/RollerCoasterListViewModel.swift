@@ -56,22 +56,22 @@ class RollerCoasterListViewModel: NSObject, ObservableObject {
     /// Deletes a RollerCoaster at a specified index in our list
     /// - Parameter index: The index
     func delete(index: Int?) {
-        guard let index = index,
-              index < list.count else {
-            return
-        }
-
-        let context = persistenceController.container.viewContext
-
-        // Get a reference to the NSManagedObject we want to delete, then delete it
-        let rollerCoaster = list[index]
-        context.delete(rollerCoaster)
-
-        do {
-            try context.save()
-        } catch let error as NSError {
-            assertionFailure("Error deleting RollerCoaster: \(error), \(error.userInfo)")
-        }
+//        guard let index = index,
+//              index < list.count else {
+//            return
+//        }
+//
+//        let context = persistenceController.container.viewContext
+//
+//        // Get a reference to the NSManagedObject we want to delete, then delete it
+//        let rollerCoaster = list[index]
+//        context.delete(rollerCoaster)
+//
+//        do {
+//            try context.save()
+//        } catch let error as NSError {
+//            assertionFailure("Error deleting RollerCoaster: \(error), \(error.userInfo)")
+//        }
     }
 
     /// Does the initial fetch to get our list of roller coasters from Core Data
