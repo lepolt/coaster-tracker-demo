@@ -24,14 +24,7 @@ struct RollerCoasterListView: View {
 
                 List {
                     ForEach(viewModel.list) { rollerCoaster in
-                        NavigationLink {
-                            RollerCoasterDetailsView(id: rollerCoaster.id!)
-                        } label: {
-                            Text(rollerCoaster.name!)
-                        }
-                    }
-                    .onDelete { indexSet in
-                        viewModel.delete(index: indexSet.first)
+                        Text(rollerCoaster.name!)
                     }
                 }
                 Spacer()
@@ -39,6 +32,7 @@ struct RollerCoasterListView: View {
             .sheet(isPresented: $isAdding) {
                 HStack {
                     TextField("Name", text: $name)
+                        .textFieldStyle(.roundedBorder)
 
                     Button {
                         viewModel.addNewRollerCoaster(name: name)

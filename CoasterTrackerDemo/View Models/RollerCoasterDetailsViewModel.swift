@@ -9,7 +9,6 @@ import Foundation
 
 class RollerCoasterDetailsViewModel: ObservableObject {
     @Published var rollerCoaster: RollerCoaster?
-    @Published var themeParks: [ThemePark] = []
 
     private let persistenceController: PersistenceController
 
@@ -17,40 +16,12 @@ class RollerCoasterDetailsViewModel: ObservableObject {
         self.persistenceController = persistenceController
 
         fetchRollerCoaster(id: id)
-        fetchThemeParks()
     }
 
     /// Toggles the `isFavorite` property of our RollerCoaster model
     func toggleFavorite() {
-        guard let rollerCoaster = rollerCoaster else {
-            return
-        }
-
-        rollerCoaster.isFavorite.toggle()
-
-        let context = persistenceController.container.viewContext
-        do {
-            try context.save()
-        } catch let error as NSError {
-            assertionFailure("Error saving RollerCoaster: \(error), \(error.userInfo)")
-        }
-    }
-
-    /// Adds the current `RollerCoaster` to a specified `ThemePark` as a relationship.
-    func addToThemePark(_ park: ThemePark) {
-        guard let rollerCoaster = rollerCoaster else {
-            return
-        }
-
-        rollerCoaster.themePark = park
-
-        let context = persistenceController.container.viewContext
-
-        do {
-            try context.save()
-        } catch let error as NSError {
-            assertionFailure("Error saving RollerCoaster: \(error), \(error.userInfo)")
-        }
+        // TODO: Implement
+        assertionFailure("TODO: Implement `toggleFavorite()`")
     }
 
     /// Fetches a specific `RollerCoaster` by a given UUID
@@ -66,18 +37,6 @@ class RollerCoasterDetailsViewModel: ObservableObject {
             rollerCoaster = results.first
         } catch let error as NSError {
             assertionFailure("Error fetching RollerCoaster with id: \(id.uuidString): \(error), \(error.userInfo)")
-        }
-    }
-
-    /// Fetches a list of `ThemeParks`
-    private func fetchThemeParks() {
-        let context = persistenceController.container.viewContext
-        let fetchRequest = ThemePark.fetchRequest()
-
-        do {
-            themeParks = try context.fetch(fetchRequest)
-        } catch let error as NSError {
-            assertionFailure("Error fetching theme parks: \(error), \(error.userInfo)")
         }
     }
 }
