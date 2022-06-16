@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="RollerCoaster" representedClassName="RollerCoaster" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <relationship name="themePark" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ThemePark" inverseName="rollerCoasters" inverseEntity="ThemePark"/>
+    </entity>
+    <entity name="ThemePark" representedClassName="ThemePark" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String"/>
+        <relationship name="rollerCoasters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RollerCoaster" inverseName="themePark" inverseEntity="RollerCoaster"/>
+    </entity>
+    <elements>
+        <element name="RollerCoaster" positionX="-27" positionY="18" width="128" height="89"/>
+        <element name="ThemePark" positionX="-27" positionY="45" width="128" height="74"/>
+    </elements>
+</model>

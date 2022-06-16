@@ -43,6 +43,7 @@
 /* Begin PBXFileReference section */
 		AB14CF44285B548100DE7F1C /* CoasterTrackerDemo v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoasterTrackerDemo v2.xcdatamodel"; sourceTree = "<group>"; };
 		AB14CF45285B548100DE7F1C /* CoasterTrackerDemo1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoasterTrackerDemo1.xcdatamodel; sourceTree = "<group>"; };
+		AB14CF47285B54B900DE7F1C /* CoasterTrackerDemo v3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoasterTrackerDemo v3.xcdatamodel"; sourceTree = "<group>"; };
 		AB2616E528119F6C0070A189 /* CoasterTrackerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoasterTrackerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2616E828119F6C0070A189 /* CoasterTrackerDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoasterTrackerDemoApp.swift; sourceTree = "<group>"; };
 		AB2616EA28119F6C0070A189 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -633,10 +634,11 @@
 		AB14CF43285B548100DE7F1C /* CoasterTrackerDemo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				AB14CF47285B54B900DE7F1C /* CoasterTrackerDemo v3.xcdatamodel */,
 				AB14CF44285B548100DE7F1C /* CoasterTrackerDemo v2.xcdatamodel */,
 				AB14CF45285B548100DE7F1C /* CoasterTrackerDemo1.xcdatamodel */,
 			);
-			currentVersion = AB14CF44285B548100DE7F1C /* CoasterTrackerDemo v2.xcdatamodel */;
+			currentVersion = AB14CF47285B54B900DE7F1C /* CoasterTrackerDemo v3.xcdatamodel */;
 			path = CoasterTrackerDemo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
