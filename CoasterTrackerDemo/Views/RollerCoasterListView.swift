@@ -39,6 +39,7 @@ struct RollerCoasterListView: View {
             .sheet(isPresented: $isAdding) {
                 HStack {
                     TextField("Name", text: $name)
+                        .textFieldStyle(.roundedBorder)
 
                     Button {
                         viewModel.addNewRollerCoaster(name: name)
