@@ -30,15 +30,13 @@ struct RollerCoasterListView: View {
                             Text(rollerCoaster.name!)
                         }
                     }
-                    .onDelete { indexSet in
-                        viewModel.delete(index: indexSet.first)
-                    }
                 }
                 Spacer()
             }
             .sheet(isPresented: $isAdding) {
                 HStack {
                     TextField("Name", text: $name)
+                        .textFieldStyle(.roundedBorder)
 
                     Button {
                         viewModel.addNewRollerCoaster(name: name)
