@@ -42,16 +42,20 @@ class CoastersByThemeParkViewModel: NSObject, ObservableObject {
     private func refreshData() {
         guard let sections = fetchedResultsController.sections else { return }
         let sectionNames = sections.map { $0.name }
+        var newData: [String: [RollerCoaster]] = [:]
 
         for (idx, section) in sectionNames.enumerated() {
             if let rollerCoasters = sections[idx].objects as? [RollerCoaster] {
                 if section == "" {
-                    data["<Unknown>"] = rollerCoasters
+                    newData["<Unknown>"] = rollerCoasters
                 } else {
-                    data[section] = rollerCoasters
+                    newData[section] = rollerCoasters
                 }
             }
         }
+
+        // Update data object with new values
+        data = newData
     }
 
     /// Performs the initial fetch of our data
